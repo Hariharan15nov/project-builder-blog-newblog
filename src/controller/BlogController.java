@@ -41,9 +41,9 @@ public class BlogController extends HttpServlet {
 		blog.setTitle(title);
 		blog.setDescription(description);
 		blog.setDate(date);
-		System.out.println(blog.getTitle());
-		System.out.println(blog.getDescription());
-		System.out.println(blog.getDate());
+		System.out.println("Blog Title: "+blog.getTitle());
+		System.out.println("Blog Description: "+blog.getDescription());
+		System.out.println("Posted on: "+blog.getDate());
 		if(blog!=null) {
 			request.setAttribute("blog", blog);
 			request.setAttribute("user",user);
